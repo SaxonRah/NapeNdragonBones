@@ -390,7 +390,7 @@ package {
 //---------------------------------------------------------------------------------------------------------------------------------char	
 		public function createCharacter():Body {
 			//crazy magic numbers, if you can figure out what im not picking up, please fix this as its crazy voodoo magicka
-			armatureBody.shapes.add(new Polygon(Polygon.rect((-armatureClip.x - 25 + armatureClip.x), (-armatureClip.y  + armatureClip.y - 65), (armatureClip.width * 2), (armatureClip.height + armatureClip.height - armatureClip.height / 3), false)));
+			armatureBody.shapes.add(new Polygon(Polygon.rect((-armatureClip.x - 25 + armatureClip.x), (-armatureClip.y  + armatureClip.y - 65), (armatureClip.width), (armatureClip.height), false)));
 			armatureBody.allowMovement = true;
 			armatureBody.allowRotation = false;
 			armatureBody.mass = 100;
